@@ -1,0 +1,35 @@
+$primary-color: #121212;
+$secondary-color: #ed7bab;
+$text-color-one: #fafafa;
+$text-color-two: $primary-color;
+
+.body {
+  font-family: 'Product Sans', sans-serif;
+}
+.navbar {
+  box-shadow: 2px 2px 2px $primary-color;
+  background-color: $primary-color;
+  height: 80px;
+  .container-fluid {
+    padding-left: 50px;
+    padding-right: 20px;
+    .navbar-brand {
+      font-family: 'Homemade Apple', cursive;
+      @media (min-width: 768px) {
+        font-size: 30px;
+      }
+    }
+    @media (min-width: 768px) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+}
+
+.Herosection {
+  background-image: url(2.jpg);
+  .row {
+    padding-left: 20px;
+    padding-top: 200px;
+  }
+}

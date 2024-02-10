@@ -1,0 +1,117 @@
+$primary-color: #121212;
+$secondary-color: #ed7bab;
+$text-color-one: #fafafa;
+$text-color-two: $primary-color;
+
+.body {
+  font-family: 'Product Sans', sans-serif;
+  margin: 0;
+}
+.navbar {
+  box-shadow: 2px 2px 2px $primary-color;
+  background-color: $primary-color;
+  height: 80px;
+  .container-fluid {
+    padding-left: 50px;
+    padding-right: 20px;
+    .navbar-brand {
+      font-family: 'Homemade Apple', cursive;
+      @media (min-width: 768px) {
+        font-size: 30px;
+      }
+    }
+    @media (min-width: 768px) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+}
+
+.Herosection {
+  min-width: 100%;
+  background-image: url(../image/2.jpg);
+  background-size: auto;
+  @media (max-width: 768px) {
+    background-image: url(../image/4.jpg);
+    background-size: contain;
+  }
+  .container {
+    padding-top: 430px;
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+      font-family: 'Homemade Apple', cursive;
+      background-color: $text-color-one;
+      width: max-content;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px black;
+    }
+    img {
+      max-width: 300px;
+      height: 150px;
+      filter: drop-shadow(2px 2px 2px black);
+    }
+  }
+}
+
+.letter,
+.gallery,
+.notes {
+  font-family: 'Product Sans', sans-serif;
+  height: fit-content;
+  .container {
+    padding-top: 50px;
+    h1 {
+      font-weight: 600;
+    }
+  }
+}
+
+.letter,
+.notes {
+  background-color: $primary-color;
+  h2 {
+    margin-top: 50px;
+    font-family: 'Homemade Apple', cursive;
+  }
+}
+.gallery {
+  background-color: $secondary-color;
+  .carousel {
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    img {
+      border-radius: 20px;
+      filter: drop-shadow(2px 2px 2px black);
+    }
+    z-index: 1;
+  }
+  .icon {
+    position: relative;
+    margin-top: -150px;
+    z-index: 2;
+  }
+}
+
+.button {
+  background-color: $secondary-color;
+  height: 200px;
+  button {
+    justify-content: center;
+    font-family: 'Product Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 5px;
+  }
+  h4 {
+    margin-top: 30px;
+    font-family: 'Homemade Apple', cursive;
+  }
+}
